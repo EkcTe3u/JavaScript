@@ -2,6 +2,6 @@
 ```
 This is repository with my javascript practice
 ```
-## sites
+## sites for learning
 
-основа - https://www.youtube.com/watch?v=Bluxbh9CaQ0
+- [basic youtube RU](https://www.youtube.com/watch?v=Bluxbh9CaQ0)
