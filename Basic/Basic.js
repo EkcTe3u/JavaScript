@@ -57,10 +57,48 @@
 // console.log(typeof x)
 // console.log(typeof null)
 
-// 5. Приоритет операторов
-const fullAge = 38
-const birthYear = 1984
-const currentYear = 2022
-//<; >; <=; >=
-const isFullAge = currentYear - birthYear >= fullAge
-console.log(isFullAge)
+// // 5. Приоритет операторов
+// const fullAge = 38
+// const birthYear = 1984
+// const currentYear = 2022
+// //<; >; <=; >=
+// const isFullAge = currentYear - birthYear >= fullAge
+// console.log(isFullAge)
+
+// 6. Условные операторы
+
+// const courseStatus = 'fail' // status - ready, fail, pending
+
+// // if (условие) { выполняемый код
+    
+// // }   
+// if (courseStatus === 'ready') {
+//     console.log('Курс готов и его можно проходить')
+// }else if (courseStatus === 'pending') {
+//     console.log('Курс находится в процессе разработки')
+//  } else {
+//     console.log('Курс не получился')
+//  }
+
+//  const num1 = 20
+//  const num2 = '20'
+//  console.log(num1 === num2)
+
+ //== только значение
+ // === значение и тип данных
+
+const isReady = true 
+//  if (isReady) {                           // (isReady) тоже самое (isReady === true)
+//     console.log('Все готово')
+//  } else {
+//     console.log('Все не готово')
+//  }
+
+ // тернарные выражения
+isReady ? console.log('Все готово') : console.log('Все не готово')
+// 7. Булевая логика
+// Логическое И &&
+//Логическое ИЛИ ||
+// Логическое НЕ !
+
+// 8. Функции
