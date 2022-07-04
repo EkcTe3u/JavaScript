@@ -104,9 +104,31 @@
 // 8. Функции
 
 // функция название(параметр){тело функции}
-function calculateAge(year) {
- return 2022 - year
-}
-const myAge = calculateAge(1984) //функция(значение year)
-console.log(myAge)
-console.log(calculateAge(1984))
+// function calculateAge(year) {
+//  return 2022 - year
+// }
+// const myAge = calculateAge(1984) //функция(значение year)
+// console.log(myAge)
+// console.log(calculateAge(1984))
+
+// function logInfoAbout(name, yearOfBirth){
+//     const age = calculateAge(yearOfBirth)
+//     console.log('Человек по имени ' + name + ' сейчас имеет возраст ' + age)
+// }
+// logInfoAbout('Андрей', 1984)
+// logInfoAbout('Кристина', 1988)
+// logInfoAbout('Глеб', 2013)
+
+// function logInfoAbout(name, yearOfBirth){
+//     const age = calculateAge(yearOfBirth)
+//     if (age > 0) {
+//     console.log('Человек по имени ' + name + ' сейчас имеет возраст ' + age)
+//     }
+//     else {
+//         console.log('Вообще-то это уже будущее')
+//     }
+// }
+// logInfoAbout('Андрей', 1984)
+// logInfoAbout('Алиса', 2025)
+
+// 9. Массивы
