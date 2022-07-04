@@ -87,7 +87,7 @@
  //== только значение
  // === значение и тип данных
 
-const isReady = true 
+// const isReady = true 
 //  if (isReady) {                           // (isReady) тоже самое (isReady === true)
 //     console.log('Все готово')
 //  } else {
@@ -95,10 +95,18 @@ const isReady = true
 //  }
 
  // тернарные выражения
-isReady ? console.log('Все готово') : console.log('Все не готово')
+// isReady ? console.log('Все готово') : console.log('Все не готово')
 // 7. Булевая логика
 // Логическое И &&
 //Логическое ИЛИ ||
 // Логическое НЕ !
 
 // 8. Функции
+
+// функция название(параметр){тело функции}
+function calculateAge(year) {
+ return 2022 - year
+}
+const myAge = calculateAge(1984) //функция(значение year)
+console.log(myAge)
+console.log(calculateAge(1984))
