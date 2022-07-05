@@ -132,3 +132,17 @@
 // logInfoAbout('Алиса', 2025)
 
 // 9. Массивы
+
+// const cars = ["Мазда", "Мерседес", "Хонда"] // квадратные скобки, перечесление данных в кавычках
+// console.log(cars)
+const cars = new Array("Мазда", "Мерседес", "Хонда")
+console.log(cars)
+console.log(cars[0]) // индекс начинается с 0
+console.log(cars.length) // длина массива
+// содержание массива можно менять, хоть он и создан через const
+cars[0] = "BMW"
+console.log(cars)
+cars[3] = "Мазда" // массив можно расширять
+console.log(cars)
+
+// 10. Циклы
