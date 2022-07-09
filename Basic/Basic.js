@@ -134,15 +134,31 @@
 // 9. Массивы
 
 // const cars = ["Мазда", "Мерседес", "Хонда"] // квадратные скобки, перечесление данных в кавычках
+// // console.log(cars)
+// const cars = new Array("Мазда", "Мерседес", "Хонда")
 // console.log(cars)
-const cars = new Array("Мазда", "Мерседес", "Хонда")
-console.log(cars)
-console.log(cars[0]) // индекс начинается с 0
-console.log(cars.length) // длина массива
-// содержание массива можно менять, хоть он и создан через const
-cars[0] = "BMW"
-console.log(cars)
-cars[3] = "Мазда" // массив можно расширять
-console.log(cars)
+// console.log(cars[0]) // индекс начинается с 0
+// console.log(cars.length) // длина массива
+// // содержание массива можно менять, хоть он и создан через const
+// cars[0] = "BMW"
+// console.log(cars)
+// cars[3] = "Мазда" // массив можно расширять
+// console.log(cars)
+
 
 // 10. Циклы
+// const cars = ["Мазда", "Мерседес", "Хонда"]
+// for (let i = 0; i < cars.length; i++) { // переменныя через let в (); условие; что делать
+// console.log(i)
+// }
+// const cars = ["Мазда", "Мерседес", "Хонда", "Porshe"]
+// for (let i = 0; i < cars.length; i++) { 
+//     const car = cars[i]
+//     console.log(car)
+// }
+// for (let car of cars){ // тоже самое более сокращенное
+//     console.log(car)
+// }
+
+
+// 11. Объекты
