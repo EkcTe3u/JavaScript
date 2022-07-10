@@ -162,3 +162,21 @@
 
 
 // 11. Объекты
+
+// const person = {
+//     firstName: 'Andrey',
+//     lastName: 'Sozdatelev',
+//     year: 1984,
+//     languages: ['Ru', 'En'],
+//     hasWife: true,
+//     greet : function(){
+//         console.log('greet')
+//     }
+// }
+// console.log(person.firstName)
+// console.log(person['lastName'])
+// const key = 'languages'
+// console.log(person[key]) // вызов через динамические ключи
+// person.hasSon = true // добавление нового ключа
+// console.log(person)
+// person.greet()
