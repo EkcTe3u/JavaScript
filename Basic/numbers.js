@@ -31,3 +31,11 @@
 
 // console.log(Number.parseInt(stringFloat) + 2) // отсекает нецелочисленное значение
 // console.log(Number.parseFloat(stringFloat) + 2) // работает с нецелыми числами
+
+// console.log(0.4 + 0.2) // 0.6---> 0.6000000000000001
+// console.log((2/5) + (1/5))
+// console.log((0.4 + 0.2).toFixed(4)) //0.6000 сколько знаков сохранить после запятой
+// console.log(+(0.4 + 0.2).toFixed(1)) 
+// console.log(parseFloat((0.4 + 0.2).toFixed(1)))
+
+// BigInt
