@@ -1,4 +1,4 @@
-// // Number
+// 1. Number
 // const num = 25 // integer
 // console.log(num)
 // const float = 25.25 //float
@@ -38,7 +38,7 @@
 // console.log(+(0.4 + 0.2).toFixed(1)) 
 // console.log(parseFloat((0.4 + 0.2).toFixed(1)))
 
-// BigInt - тип данных для взаимодествия с числами более max interger
+// 2. BigInt - тип данных для взаимодествия с числами более max interger
 // console.log(Number.MAX_SAFE_INTEGER)
 // console.log(90071992547409919999) //не можем взаимодействовать и оперировать
 // console.log(typeof 90071992547409919999)
@@ -51,4 +51,24 @@
 // console.log(parseInt(10n) - 4)
 // console.log(10n - BigInt(4))
 
-// Math
+// 3. Math
+// console.log(Math.E)
+// console.log(Math.PI)
+
+// console.log(Math.sqrt(25)) // корень
+// console.log(Math.pow(10, 2)) // 10 в степени 2
+// console.log(Math.abs(-25)) // модуль числа
+// console.log(Math.max(24,33,44,99)) // максимальное число из списка
+// console.log(Math.min(24,33,44,99)) // минимальное число из списка
+// console.log(Math.floor(4,9)) // округляет всегда в меньшую сторону, даже более 0,5
+// console.log(Math.ceil(4.2))  // округление вверх. Округляет аргумент до ближайшего большего целого.
+// console.log(Math.round(4.5)) //возвращает число, округлённое к ближайшему целому.
+// console.log(Math.trunc(4.9)) // возвращает целую часть числа путём удаления всех дробных знаков.
+// console.log(Math.random()) // всегда рандомное число
+
+// Пример
+
+function getRandomBetween(min, max){
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+console.log(getRandomBetween(10, 42))
