@@ -38,4 +38,17 @@
 // console.log(+(0.4 + 0.2).toFixed(1)) 
 // console.log(parseFloat((0.4 + 0.2).toFixed(1)))
 
-// BigInt
+// BigInt - тип данных для взаимодествия с числами более max interger
+// console.log(Number.MAX_SAFE_INTEGER)
+// console.log(90071992547409919999) //не можем взаимодействовать и оперировать
+// console.log(typeof 90071992547409919999)
+// console.log(typeof 90071992547409919999n) // BigInt
+// console.log(90071992547409919999n -9007199254740991999n)
+// console.log(-90071992547409919999n)
+// // console.log(90071992547409919999.255225n) // error
+
+// console.log(10n - 4) // error разные типы данных
+// console.log(parseInt(10n) - 4)
+// console.log(10n - BigInt(4))
+
+// Math
