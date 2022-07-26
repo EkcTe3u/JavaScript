@@ -13,3 +13,9 @@ function testArray(a, b) {
 }
 console.log(testArray([1,3,4], [4]))
 ```
+- Реализуйте функцию squareOfSum, которая находит квадрат суммы двух чисел по формуле: a² + 2 * a * b + b²
+```
+function squareOfSum(a, b) {
+    return a**2 + 2*a*b + b**2
+}
+```
