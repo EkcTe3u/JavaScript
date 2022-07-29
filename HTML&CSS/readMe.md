@@ -1,1 +1,3 @@
 - base course [HTML&CSS](https://result.school/products/html-css?utm_source=youtube&utm_medium=vladilen&utm_campaign=video_26_05_22)
+- Основы HTML и CSS [stepik](https://stepik.org/course/52164/syllabus)
+- Веб-разработка для начинающих: HTML и CSS [stepik](https://stepik.org/course/38218/syllabus)
