@@ -2,3 +2,4 @@
 - Основы HTML и CSS [stepik](https://stepik.org/course/52164/syllabus)
 - Веб-разработка для начинающих: HTML и CSS [stepik](https://stepik.org/course/38218/syllabus)
 - Документация [HTML](https://developer.mozilla.org/ru/docs/Web/HTML/Element/Heading_Elements)
+- [Emmet Documentation](https://docs.emmet.io/cheat-sheet/)
