@@ -1,0 +1,24 @@
+.color-1 {
+    color: red;
+}
+
+/* RGB  */
+/* 00-ff ff - самый яркий 0000ff blue 000000 - black ffffff - white */
+.color-2 {
+    color: #4b0082
+}
+
+.color-3 {
+    color: ddd;
+}
+
+/* 0-255 */
+.color-4 {
+    color: rgb(255,0,255);
+    /* opacity: 0.2 */
+}
+
+.color-5 {
+    color: rgba(0, 150, 0, 0.8);
+}
+
