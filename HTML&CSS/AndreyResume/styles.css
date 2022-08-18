@@ -17,6 +17,22 @@ body {
     margin-bottom: 20px;
 }
 
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: blue;
+}
+a:visited {
+    color: grey;
+}
+
 .avatar {
     width: 200px;
     border-radius: 20px;
@@ -64,4 +80,17 @@ body {
     margin-bottom: 20px;
     background-color: rgb(247, 247, 212);
     
+}
+
+.btn{
+    background: black;
+    padding: 15px 20px;
+    color: white;
+    border: none;
+    font-family: inherit;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.8;
 }
