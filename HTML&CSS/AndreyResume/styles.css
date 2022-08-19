@@ -40,8 +40,13 @@ a:visited {
 }
 .info {
     margin-bottom: 20px;
+    display: flex;
+    
 }
 
+.info-text{
+    margin-left: 30px;
+}
 
 .info-text p {
     font-style: italic;
@@ -126,4 +131,45 @@ a:visited {
 .table td:nth-child(2),
 .table td:nth-child(3){
     color: #4b7759;
+}
+
+.form h2 {
+    text-align: center;
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+    
+
+}
+
+.form-row .form-group {
+    /* display: inline-block; */
+    margin-right: 20px;
+    width: 50%;
+    /* width: calc(50% - 20px); */
+}
+
+.form-row .form-group:last-child{
+    margin-right: 0;
+}
+
+
+.form-group label{
+    display: block;
+    font-size: 14px;
+    color: #4b7759;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
 }
