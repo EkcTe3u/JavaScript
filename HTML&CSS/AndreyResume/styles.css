@@ -2,7 +2,7 @@
 
 
 .container {
-    max-width: 750px;
+    max-width: 850px;
     margin: auto;
     padding-top: 30px;
 }
@@ -42,6 +42,13 @@ a:visited {
     margin-bottom: 20px;
     display: flex;
     
+}
+
+@media (max-width: 600px) {
+    .info {
+        display: block;
+        text-align: center
+    }
 }
 
 .info-text{
@@ -140,10 +147,19 @@ a:visited {
 .form-row {
     margin-bottom: 10px;
     display: flex;
-    
-
 }
 
+@media (max-width: 650px) {
+    .form-row {
+        display: block;
+    }
+
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
 .form-row .form-group {
     /* display: inline-block; */
     margin-right: 20px;
@@ -173,3 +189,4 @@ a:visited {
     outline: none;
     font-family: inherit;
 }
+
