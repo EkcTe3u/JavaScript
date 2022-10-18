@@ -78,3 +78,4 @@ const smallestDivisor = (num) => {
   return iter(num, 2)
 }
 ```
+test
