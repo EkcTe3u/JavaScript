@@ -13,5 +13,5 @@ This is repository with my javascript practice
 - [free book](https://github.com/getify/You-Dont-Know-JS)
 - [NODESCHOOL](https://nodeschool.io/ru/)
 - [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
-- [Секреты JavaScript ниндзя](google.com)
+- [Секреты JavaScript ниндзя](https://www.google.ru/)
 
