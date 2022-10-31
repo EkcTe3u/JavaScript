@@ -12,5 +12,6 @@ This is repository with my javascript practice
 - [Eloquent JavaScript book](https://eloquentjavascript.net/)
 - [free book](https://github.com/getify/You-Dont-Know-JS)
 - [NODESCHOOL](https://nodeschool.io/ru/)
--[JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+- [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+- [Секреты JavaScript ниндзяъ
 
