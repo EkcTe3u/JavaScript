@@ -28,7 +28,6 @@ const array = [1, undefined, 3, 5, 8, 13]
 // console.log(a, c);
 
 // Onjects
-
 const address = {
     country: "Russia", 
     town: "Saint-Petersbug",
