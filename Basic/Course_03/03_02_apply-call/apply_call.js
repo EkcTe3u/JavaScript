@@ -30,6 +30,7 @@ const kristina = {
 // fnKristinaLogInfo()
 // вызываются сразу
 // person.logInfo.call(kristina, 'QA Engineer', '+7906')
+// массив, два параметра
 person.logInfo.apply(kristina, ['QA Engineer', '+7906'])
 
 // +++++
