@@ -37,3 +37,30 @@ console.log(isInternationalPhone('88'))
 const isLeapYear = (year) => ((year % 400 === 0) || (year % 4 === 0) && (year % 100 != 0));
 
 console.log(`isLeapYear ${isLeapYear(2016)}`)
+
+// lesson 28
+
+console.log(false || 'yes')
+
+// 0, '' (пустая строка), undefined, NaN, null приводятся к false. Эти значения называют falsy.
+
+// Реализуйте функцию getLetter(), которая извлекает из переданной строки указанный символ (по порядковому номеру, а не индексу) и возвращает его наружу. 
+// Если такого символа нет, то функция возвращает пустую строку.
+
+// Примеры вызова:
+
+// const name = 'Hexlet';
+ 
+// // Обычное обращение возвращает undefined
+// name[10]; // undefined
+ 
+// // 11 символ соответствует 10 индексу
+// getLetter(name, 11); // ''
+ 
+// getLetter(name, 1); // 'H'
+// getLetter(name, 0); // ''
+// getLetter(name, 6); // 't'
+
+const getLetter = (name, number) => name[number-1] || '';
+
+console.log(getLetter('abcd', 1))
