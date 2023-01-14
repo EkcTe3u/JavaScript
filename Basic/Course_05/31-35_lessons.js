@@ -102,4 +102,24 @@ const mySubstr = (string, length) => {
     return resultString;
   }
 
-console.log(mySubstr("I love you! you love me too", 12))
+//   lesson 35
+// Функция countChars() из теории считает, сколько раз входит буква в предложение и при этом учитывает регистр букв. То есть A и a с её точки зрения разные символы.
+//  Реализуйте вариант этой же функции, так чтобы регистр букв был не важен:
+
+// countChars('HexlEt', 'e'); // 2
+// countChars('HexlEt', 'E'); // 2
+
+const countChars = (text, symbol) => {
+    let i = 0
+    let count = 0
+    while (i < text.length) {
+        if (text[i].toLowerCase() === symbol.toLowerCase()){
+            count +=1
+            
+        }
+        i +=1
+    }
+    return count
+}
+
+console.log(countChars('abcAbcaa', 'a'))
