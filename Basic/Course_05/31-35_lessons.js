@@ -46,3 +46,30 @@ const printNumbers = (i) => {
 }
 
 console.log(printNumbers(6))
+
+// lesson 33
+
+// Реализуйте функцию joinNumbersFromRange(), которая объединяет все числа из диапазона в строку и возвращает её:
+
+// joinNumbersFromRange(1, 1); // '1'
+// joinNumbersFromRange(2, 3); // '23'
+// joinNumbersFromRange(5, 10); // '5678910'
+
+const joinNumbersFromRange = (start, finish) =>{
+    let str = ''
+    let i = start
+    while (i <= finish) {
+        str = str + i.toString()
+        i += 1
+    }
+
+    // while (i <= finish) {
+    //     result = `${result}${i}`;
+    //     i = i + 1;
+    //   }
+
+    return str
+}
+console.log(joinNumbersFromRange(1, 1))
+console.log(joinNumbersFromRange(2, 3))
+console.log(joinNumbersFromRange(5, 10))
