@@ -73,3 +73,33 @@ const joinNumbersFromRange = (start, finish) =>{
 console.log(joinNumbersFromRange(1, 1))
 console.log(joinNumbersFromRange(2, 3))
 console.log(joinNumbersFromRange(5, 10))
+
+// Реализуйте функцию mySubstr(), которая извлекает из строки подстроку указанной длины. Она принимает на вход два аргумента (строку и длину) и возвращает подстроку, 
+// начиная с первого символа:
+
+// const text = 'If I look back I am lost';
+// console.log(mySubstr(text, 1));  # => 'I'
+// console.log(mySubstr(text, 7));  # => 'If I lo'
+// В этом задании аргумент, обозначающий длину извлекаемой подстроки, не может быть длиннее самой строки.
+
+// Используйте тот же подход, что в функции для переворота строки из урока: собирайте строку-результат в цикле, перебирая начальную строку до определённого момента.
+
+// const mySubstr = (text, num) => {
+//     let result = text.slice(0, num)
+//       return result
+//   }
+
+
+const mySubstr = (string, length) => {
+    let resultString = ''
+    let i = 0
+    while (i < length) {
+      resultString += string[i];
+      i += 1
+    //   console.log(i, '-----', string[i])
+    }
+  
+    return resultString;
+  }
+
+console.log(mySubstr("I love you! you love me too", 12))
