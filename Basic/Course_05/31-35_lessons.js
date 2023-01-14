@@ -25,4 +25,25 @@ const getNumberExplanation = (number) => {
 
 console.log(getNumberExplanation(666))
 
+// lesson 32
 
+// Модифицируйте функцию printNumbers() так, чтобы она выводила числа в обратном порядке. Для этого нужно идти от верхней границы к нижней. 
+// То есть счётчик должен быть инициализирован максимальным значением, а в теле цикла его нужно уменьшать до нижней границы.
+
+// printNumbers(4);
+// 4
+// 3
+// 2
+// 1
+// finished!
+
+const printNumbers = (i) => {
+    while (i >= 1){
+        console.log(i)
+        i -= 1
+        console.log("-----", i)
+    }
+    console.log('finished!')
+}
+
+console.log(printNumbers(6))
