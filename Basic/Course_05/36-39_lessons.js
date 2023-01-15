@@ -44,3 +44,53 @@ console.log(makeItFunny('hello', 2))
 // console.log(f);
 
 console.log('abc!abc abc'.substring(3,4))
+
+// lesson 37
+
+// Сэмвелл обнаружил, что его сообщения перехватываются в замке «Близнецы» и там читаются. Из-за этого их атаки перестали быть внезапными. 
+// Немного подумав, он разработал программу, которая бы шифровала сообщения по следующему алгоритму. Она бы брала текст и переставляла 
+// в нем каждые два подряд идущих символа.
+
+// encrypt('move');   // 'omev'
+// encrypt('attack'); // 'taatkc'
+// encrypt('car!'); // 'ac!r'
+ 
+// // Если число символов нечётное,
+// // то последний символ остаётся на своём месте
+// encrypt('go!'); // 'og!'
+
+const encrypt = (text) => {
+    if (text.length % 2 === 0) {
+        let resultText = ''
+        for (let i = 0; i < text.length; i += 2){
+            resultText = `${resultText}${text[i+1]}${text[i]}`
+        }
+        return resultText
+    }else {
+        let resultText = ''
+        for (let i = 0; i < text.length  ; i += 2){
+            resultText = `${resultText}${text[i+1]}${text[i]}`
+        }
+        return resultText.replace('undefined', '')
+
+    }
+}
+
+// const encrypt = (str) => {
+//     let result = '';
+//     for (let i = 0; i < str.length; i += 2) {
+//       const nextSymbol = str[i + 1] || '';
+//       result = `${result}${nextSymbol}${str[i]}`;
+//     }
+  
+//     return result;
+//   };
+
+console.log(encrypt('move'))
+console.log(encrypt('attack'))
+console.log(encrypt('GO!'))
+console.log(encrypt('omev'))
+console.log(encrypt('taatkc'))
+console.log(encrypt('ac!r'))
+
+
