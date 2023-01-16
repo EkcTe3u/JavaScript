@@ -100,10 +100,14 @@ console.log(encrypt('ac!r'))
 // Создайте функцию, которая принимает аргумент n и возвращает площадь треугольника высотой n и основанием n**2/2. Используйте функцию square() 
 // (принимает число и возвращает его квадрат).
 // Экспортируйте созданную функцию по умолчанию.
-import { getTriangleArea } from './myMathModule.js';
+// import  getTriangleArea from './myMathModule.js';
 
 const solution = (n) => getTriangleArea(n, square(n) / 2);
 
-export default solution;
+// export default solution;
 
+import fib from './39_lesson.js'
 
+console.log(fib(5))
+console.log(fib(50))
+console.log(fib(500))
