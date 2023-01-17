@@ -1,0 +1,11 @@
+{
+  "name": "course_01",
+  "version": "1.0.0",
+  "description": "- [NodeJS Автоматизация RU](https://www.youtube.com/watch?v=GhXT7fPOLcA&list=PL5eiLar9sxBF6839344S7gN7qaK24P-FS&index=1)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
