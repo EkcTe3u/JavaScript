@@ -1,11 +1,18 @@
 {
+  
   "name": "course_01",
   "version": "1.0.0",
   "description": "- [NodeJS Автоматизация RU](https://www.youtube.com/watch?v=GhXT7fPOLcA&list=PL5eiLar9sxBF6839344S7gN7qaK24P-FS&index=1)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "webdriver": "webdriver-manager update",
+    "test": "protractor ./protractor.conf.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "protractor": "^7.0.0"
+  }
 }
