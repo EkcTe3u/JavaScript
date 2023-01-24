@@ -44,4 +44,30 @@ newOddMassive = ${newOddMasive}`;
 }  
 }
 
-console.log(returnEvenNumbers([1, 3, 5, 7]));
+console.log(returnEvenNumbers([1, 3, 5, 7]))
+const bb = 'abraKadabRa'
+console.log(bb.toLowerCase());
+// Сделать функцию которая вернёт количество букв 'a' в переданном в неё слове.
+// Алфавит Eng. Если нету букв 'а', то вернтуть текст "No a characters".
+
+const returnA = (word) => {
+    let massiveOfLetters = word.toLowerCase().split('');
+    let counter = 0;
+    for (const element of massiveOfLetters){
+
+        if (element === 'a'){
+            counter ++;
+        }
+        
+    }
+    
+    if (counter === 0){
+        return 'No a characters';
+    } else {
+     return counter
+        }
+    };
+
+
+console.log(returnA('brbrbrb'))
+console.log(returnA('abrakadabRAAA'))
