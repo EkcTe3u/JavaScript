@@ -87,7 +87,7 @@ String.prototype.toJadenCase = function () {
 function filter_list(l){ 
     return l.filter(Number.isInteger);
 }
-console.log(filter_list([1, 'a', 'b', 0, 15]));
+// console.log(filter_list([1, 'a', 'b', 0, 15]));
 
 function filter_list(l) {
     let res = [];
@@ -100,4 +100,27 @@ function filter_list(l) {
     return res;
 }
 
-console.log(filter_list([1, 'a', 'b', 0, 15]));
+// console.log(filter_list([1, 'a', 'b', 0, 15]));
+
+// Usually when you buy something, you're asked whether your credit card number, phone number or answer to your 
+// most secret question is still correct. However, since someone could look over your shoulder, you don't want that shown on your screen. Instead, we mask it.
+// Your task is to write a function maskify, which changes all but the last four characters into '#'
+
+function maskify(cc) {
+    if(cc.length<=4){
+        return cc
+    }else{
+        let str = cc.toString()
+        let a = []
+        let b = str.split('')
+        for( let i = 0; i < b.length - 4; i++){
+            a.push('#')
+        }
+        for (i=b.length - 4; i<b.length; i++){
+            a.push(b[i])
+        }
+        return a.join('')
+    }
+}
+
+console.log(maskify(12345));
