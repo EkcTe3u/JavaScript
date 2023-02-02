@@ -88,3 +88,16 @@ function filter_list(l){
     return l.filter(Number.isInteger);
 }
 console.log(filter_list([1, 'a', 'b', 0, 15]));
+
+function filter_list(l) {
+    let res = [];
+    for(var item=0;item<l.length;item++){
+        if (typeof l[item] === "number"){
+            res.push(l[item]);
+        }
+      
+    }
+    return res;
+}
+
+console.log(filter_list([1, 'a', 'b', 0, 15]));
