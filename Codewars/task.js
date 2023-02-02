@@ -1,10 +1,10 @@
 const helloWorld = () => {
-    console.log("Hello World!");
+    // console.log("Hello World!");
 }
 helloWorld()
 
 const hl =()=> "Hello World!!";
-console.log(hl())
+// console.log(hl())
 
 // Given n, take the sum of the digits of n. If that value has more than one digit,
 // continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer
@@ -25,7 +25,7 @@ function digitalRoot(n) {
     }
     
 }
-console.log(digitalRoot(132189));
+// console.log(digitalRoot(132189));
 
 // In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number   
 // highAndLow("1 2 3 4 5");  // return "5 1"
@@ -52,9 +52,9 @@ function highAndLow(numbers){
     return `${highNumber} ${lowNumber}`;
 }
 
-console.log(highAndLow('8 3 -5 42 -1 0 0 -9 4 7 4 -4'))
-console.log(highAndLow('1 2 3'))
-console.log(typeof(highAndLow('1 9 3 4 -5')))
+// console.log(highAndLow('8 3 -5 42 -1 0 0 -9 4 7 4 -4'))
+// console.log(highAndLow('1 2 3'))
+// console.log(typeof(highAndLow('1 9 3 4 -5')))
 
 
 // Jaden Smith, the son of Will Smith, is the star of films such as The Karate Kid (2010) and After Earth (2013). 
@@ -75,4 +75,16 @@ String.prototype.toJadenCase = function () {
     });
     return arr.join(' ');
   };
-  console.log(String.prototype.toJadenCase("How can mirrors be real if our eyes aren't real"));
+//   console.log(String.prototype.toJadenCase("How can mirrors be real if our eyes aren't real"));
+
+// In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+
+// Example
+// filter_list([1,2,'a','b']) == [1,2]
+// filter_list([1,'a','b',0,15]) == [1,0,15]
+// filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+
+function filter_list(l){ 
+    return l.filter(Number.isInteger);
+}
+console.log(filter_list([1, 'a', 'b', 0, 15]));
