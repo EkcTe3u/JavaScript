@@ -1,1 +1,1 @@
-- [react youtube RU](https://www.youtube.com/watch?v=OJ16BaPC6VI)
+- [React youtube example project RU](https://www.youtube.com/watch?v=OJ16BaPC6VI)
