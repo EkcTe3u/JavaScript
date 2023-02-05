@@ -1,1 +1,1 @@
-- [NodeJS Автоматизация RU](https://www.youtube.com/watch?v=GhXT7fPOLcA&list=PL5eiLar9sxBF6839344S7gN7qaK24P-FS&index=1)
+- [NodeJS Автоматизация RU(неактуально)](https://www.youtube.com/watch?v=GhXT7fPOLcA&list=PL5eiLar9sxBF6839344S7gN7qaK24P-FS&index=1)
