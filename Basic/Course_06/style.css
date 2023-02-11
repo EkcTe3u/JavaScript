@@ -1,0 +1,132 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.none {
+  display: none;
+}
+
+.red {
+  border: 1px solid red;
+}
+.green {
+  border: 1px solid green;
+}
+.blue {
+  border: 1px solid blue;
+}
+
+.red-text {
+  color: red;
+}
+.green-text {
+  color: green;
+}
+
+/* Шапка */
+
+header {
+  padding: 30px 30px 40px;
+  background-color: #f7e017;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.school-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #bba800;
+}
+
+/* Общие стили */
+
+.dom-example {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.example-block {
+  margin: 30px 0px;
+}
+
+.text-block {
+  background-color: rgb(204, 214, 223);
+  padding: 15px;
+  height: 30px;
+  font-size: 22px;
+}
+
+/* Инпут с дублированием текста */
+
+.input-text {
+  font-size: 18px;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+}
+
+/* Список дел */
+
+.simple-todo {
+  margin-top: 40px;
+}
+
+/* Секундомер */
+
+.counter {
+  text-align: center;
+  font-size: 42px;
+  line-height: 80px;
+  border: 1px solid #000;
+  height: 80px;
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* Конвертер валют */
+
+.currency-box {
+  max-width: 400px;
+}
+
+.currency-row {
+  border: 1px solid rgb(175, 175, 175);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.currency-row:first-child {
+  border-radius: 6px 6px 0 0;
+}
+
+.currency-row:last-child {
+  border-radius: 0 0 6px 6px;
+}
+
+.currency-row:not(:last-child) {
+  margin-bottom: -1px;
+}
+
+.currency-info {
+  margin-right: 15px;
+  padding: 10px 15px;
+  height: 100%;
+  background-color: #e3e3e3;
+  font-size: 22px;
+}
+
+.currency-row span {
+  font-size: 22px;
+  font-weight: 20;
+  margin-right: 10px;
+}
