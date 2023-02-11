@@ -30,19 +30,32 @@
 // document.querySelector(".header");
 // document.querySelector("#footer");
 
-const header = document.querySelector("h2");
+// const header = document.querySelector("h2");
 
-console.log(header);
-document.querySelector("h3").classList.add("red");
-document.querySelector("h3").classList.add("blue");
+// console.log(header);
+// document.querySelector("h3").classList.add("red");
+// document.querySelector("h3").classList.add("blue");
 
-const headers = document.querySelectorAll("h2");
-console.log(headers);
-for (let item of headers) {
-  item.classList.add("red-text");
-}
+// const headers = document.querySelectorAll("h2");
+// console.log(headers);
+// for (let item of headers) {
+//   item.classList.add("red-text");
+// }
 
-const paragraphs = document.querySelectorAll('p')
-for (let item of paragraphs){
-    item.classList.add('green-text')
-}
+// const paragraphs = document.querySelectorAll("p");
+// for (let item of paragraphs) {
+//   item.classList.add("green-text");
+// }
+
+// ================= CSS ================
+//  .add()
+//  .remove()
+//  .toggle() переключает
+//   .contains() содержит
+const heading = document.querySelector("h2");
+heading.classList.add("red-text");
+heading.classList.remove("red-text");
+heading.classList.toggle("red-text");
+heading.classList.toggle("green");
+
+heading.classList.contains("green");
