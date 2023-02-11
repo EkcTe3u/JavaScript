@@ -1,1 +1,1 @@
-- [Основы JavaScript hexlet RU](https://ru.hexlet.io/courses/js-basics)
+- **[Основы JavaScript hexlet RU](https://ru.hexlet.io/courses/js-basics)**
