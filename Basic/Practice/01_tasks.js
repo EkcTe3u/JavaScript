@@ -71,3 +71,25 @@ const returnA = (word) => {
 
 console.log(returnA('brbrbrb'))
 console.log(returnA('abrakadabRAAA'))
+
+
+// 6) **Написать функцию которая выдаст список тестов для переданного в неё web-ui элемента
+// Элементы: Phone number field, CheckBox, SignIn Button.
+// 7) ***Написать функцию которая на вход получает JSON а возвращяет XML
+// npm install --save xml-js
+import json2xml from 'xml-js';
+
+const jsonObj = {
+  name: 'Garage',
+  cars: [
+    { color: 'red', maxSpeed: 120, age: 2 },
+    { color: 'blue', maxSpeed: 100, age: 3 },
+    { color: 'green', maxSpeed: 130, age: 2 },
+  ],
+};
+
+const json = JSON.stringify(jsonObj);
+
+const xml = json2xml(json, { compact: true, spaces: 4 });
+
+console.log(xml);
