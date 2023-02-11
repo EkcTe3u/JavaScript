@@ -14,4 +14,5 @@ This is repository with my javascript practice
 - [NODESCHOOL](https://nodeschool.io/ru/)
 - [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 - [Секреты JavaScript ниндзя](https://www.google.ru/)
+- [JavaScript для начинающих 2022. Полный курс за 6 часов. Уроки. Теория + практика](https://www.youtube.com/watch?v=maPRR_jjyOE)
 
