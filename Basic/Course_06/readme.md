@@ -1,0 +1,1 @@
+**[JavaScript для начинающих 2022. Полный курс за 6 часов. Уроки. Теория + практика](https://www.youtube.com/watch?v=maPRR_jjyOE)**
