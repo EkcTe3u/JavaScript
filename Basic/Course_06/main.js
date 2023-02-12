@@ -110,3 +110,21 @@ button.onclick = function () {
   console.log("Click 2!");
   img.remove();
 };
+
+// ======== Работа с прошлушкой событий форма===========
+const inputText = document.querySelector("#input-text");
+const textBlock = document.querySelector("#text-block");
+
+// inputText.addEventListener('input', function(){
+//     // console.log('Input!!')
+//     console.log(inputText.value)
+//     textBlock.innerText = inputText.value
+// })
+
+function inputHandler () {
+    // console.log('Input!!')
+    console.log(inputText.value)
+    textBlock.innerText = inputText.value
+}
+
+inputText.addEventListener('input', inputHandler)
