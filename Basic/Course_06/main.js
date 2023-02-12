@@ -73,14 +73,40 @@ hasAttributes() — возвращает true, если у элемента им
 getAttributesNames() — возвращает названия атрибутов элемента
 */
 
+// const img = document.querySelector("#logo");
+// img.getAttribute("src");
+
+// img.setAttribute("src", "./img/php.png");
+// img.setAttribute("width", "200");
+// img.setAttribute("src", "./img/js.png");
+
+// img.src = "./img/js.png";
+
+// const button = document.querySelector("#button");
+// button.setAttribute("value", "Send");
+
+// ======== Работа с прошлушкой событий ===========
+
+const button = document.querySelector("#button");
 const img = document.querySelector("#logo");
-img.getAttribute("src");
 
-img.setAttribute("src", "./img/php.png");
-img.setAttribute("width", "200");
-img.setAttribute("src", "./img/js.png");
+button.value = "Delete";
 
-img.src = "./img/js.png";
+// button.addEventListener("click", function () {
+//   console.log("Click!");
+//   img.remove();
+// });
 
-const button = document.querySelector('#button')
-button.setAttribute('value', 'Send')
+// button.addEventListener("click", function () {
+//   console.log("Click2");
+//   img.remove();
+// });
+
+button.onclick = function () {
+  console.log("Click 1!");
+  img.remove();
+};
+button.onclick = function () {
+  console.log("Click 2!");
+  img.remove();
+};
