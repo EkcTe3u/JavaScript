@@ -112,6 +112,7 @@ button.onclick = function () {
 };
 
 // ======== Работа с прошлушкой событий форма===========
+
 const inputText = document.querySelector("#input-text");
 const textBlock = document.querySelector("#text-block");
 
@@ -121,10 +122,20 @@ const textBlock = document.querySelector("#text-block");
 //     textBlock.innerText = inputText.value
 // })
 
-function inputHandler () {
-    // console.log('Input!!')
-    console.log(inputText.value)
-    textBlock.innerText = inputText.value
+function inputHandler() {
+  // console.log('Input!!')
+  console.log(inputText.value);
+  textBlock.innerText = inputText.value;
 }
 
-inputText.addEventListener('input', inputHandler)
+inputText.addEventListener("input", inputHandler);
+
+// ======== Работа с прошлушкой событий event===========
+
+const list = document.querySelector("#list");
+
+list.addEventListener("click", function (event) {
+  // console.log(this)
+  // console.log(event)
+  console.log(event.target);
+});
