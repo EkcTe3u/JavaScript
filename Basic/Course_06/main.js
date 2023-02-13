@@ -132,10 +132,54 @@ inputText.addEventListener("input", inputHandler);
 
 // ======== Работа с прошлушкой событий event===========
 
-const list = document.querySelector("#list");
+// const list = document.querySelector("#list");
 
-list.addEventListener("click", function (event) {
-  // console.log(this)
-  // console.log(event)
-  console.log(event.target);
-});
+// list.addEventListener("click", function (event) {
+//   // console.log(this)
+//   // console.log(event)
+//   console.log(event.target);
+// });
+
+// ======== Работа с прошлушкой событий elements===========
+/*
+// Создать элемент
+document.createElement('tag-name')
+
+// Изменить HTML содержимое внутри элемента
+element.innerHTML = ''
+
+// Изменить Текстовое  содержимое внутри элемента
+node.innerText = ''
+
+// Клонирование элемента
+node.cloneNode() 
+// true c внутренним содержимым (текст и теги), false - без внутреннего содержимого
+
+// вставить элемент внутрь другого элемента
+element.append(nodesOrDOMStrings)
+
+// Удалить элемент
+element.remove()
+*/
+
+const container = document.querySelector("#elementsContainer");
+// make header
+const newHeader = document.createElement("h1");
+newHeader.innerText = "New header";
+container.append(newHeader);
+
+// Copy header
+const mainHeader = document.querySelector("header");
+const headerCopy = mainHeader.cloneNode(true);
+container.append(headerCopy);
+
+// вставка разметки через строки
+
+const htmlExample = "<h2>Another header</h2>";
+container.insertAdjacentHTML("beforeend", htmlExample);
+
+// вставка разметки через шаблонные строки
+
+const title = 'Text of header'
+const htmlExample2 = `<h2>${title}</h2>`
+container.insertAdjacentHTML('beforeend', htmlExample2)
