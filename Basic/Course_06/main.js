@@ -182,4 +182,30 @@ container.insertAdjacentHTML("beforeend", htmlExample);
 
 const title = "Text of header";
 const htmlExample2 = `<h2>${title}</h2>`;
-container.insertAdjacentHTML("beforeend", htmlExample2cre);
+container.insertAdjacentHTML("beforeend", htmlExample2);
+
+// ================ TODO ======================
+
+const todoList = document.querySelector("#todo-list");
+const todoForm = document.querySelector("#todo-form");
+const todoInput = document.querySelector("#todo-input");
+
+todoForm.addEventListener("submit", formHandler);
+
+function formHandler(event) {
+  event.preventDefault();
+  // get from input
+  const tastText = todoInput.value;
+
+  // create tag li
+  const li = `<li>${tastText}</li>`;
+
+  // add on page
+  todoList.insertAdjacentHTML("beforeend", li);
+
+  // clear input
+  todoInput.value = "";
+
+  // add focus to input
+  todoInput.focus();
+}
