@@ -180,6 +180,6 @@ container.insertAdjacentHTML("beforeend", htmlExample);
 
 // вставка разметки через шаблонные строки
 
-const title = 'Text of header'
-const htmlExample2 = `<h2>${title}</h2>`
-container.insertAdjacentHTML('beforeend', htmlExample2)
+const title = "Text of header";
+const htmlExample2 = `<h2>${title}</h2>`;
+container.insertAdjacentHTML("beforeend", htmlExample2cre);
