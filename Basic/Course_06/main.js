@@ -209,3 +209,12 @@ function formHandler(event) {
   // add focus to input
   todoInput.focus();
 }
+
+// ===========setInterval===========
+
+const timerIntervalID = setInterval(function () {
+  console.log("Fired!");
+}, 1000);
+
+// clearInterval(timerIntervalID)
+
