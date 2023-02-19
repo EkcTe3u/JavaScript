@@ -227,9 +227,40 @@ const timeOut = setTimeout(function () {
 // clearInterval(timeOut)
 
 const fired = setInterval(() => {
-  console.log("setInterval Fired!");
+  // console.log("setInterval Fired!");
 }, 1000);
 
 setTimeout(() => {
   clearInterval(fired);
 }, 10000);
+
+// ==========Timer=============
+const counterElement = document.querySelector("#counter");
+let counter = 0;
+let timerID;
+
+// start
+
+const btnStart = document.querySelector("#start");
+btnStart.onclick = function () {
+  let timerID = setInterval(function () {
+    counter++;
+    counterElement.innerText = counter;
+  }, 1000);
+
+  // Pause
+
+  const btnPause = document.querySelector("#pause");
+  btnPause.onclick = function () {
+    clearInterval(timerID);
+  };
+
+  // Reset
+
+  const btnReset = document.querySelector("#reset");
+  btnReset.onclick = function () {
+    counter = 0;
+    counterElement.innerText = counter;
+    clearInterval(timerID);
+  };
+};
