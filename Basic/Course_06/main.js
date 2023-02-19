@@ -213,8 +213,23 @@ function formHandler(event) {
 // ===========setInterval===========
 
 const timerIntervalID = setInterval(function () {
-  console.log("Fired!");
+  // console.log("Fired!");
 }, 1000);
 
 // clearInterval(timerIntervalID)
 
+// =========setTimeOut===========
+
+const timeOut = setTimeout(function () {
+  // console.log("TimeOut Fired!");
+}, 2000);
+
+// clearInterval(timeOut)
+
+const fired = setInterval(() => {
+  console.log("setInterval Fired!");
+}, 1000);
+
+setTimeout(() => {
+  clearInterval(fired);
+}, 10000);
