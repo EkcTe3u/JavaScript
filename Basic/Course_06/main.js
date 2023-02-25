@@ -11,7 +11,7 @@
 //   }
 // }
 
-// // Теперь создадим новые объекты на основе класса person
+//Теперь создадим новые объекты на основе класса person
 
 // const person1 = new Person("Марк", 30, false);
 // const person2 = new Person("Павел", 28, true);
@@ -111,7 +111,7 @@ button.onclick = function () {
   img.remove();
 };
 
-// ======== Работа с прошлушкой событий форма===========
+// ======== Работа с прошлушкой событий форма ===========
 
 const inputText = document.querySelector("#input-text");
 const textBlock = document.querySelector("#text-block");
@@ -130,7 +130,7 @@ function inputHandler() {
 
 inputText.addEventListener("input", inputHandler);
 
-// ======== Работа с прошлушкой событий event===========
+// ======== Работа с прошлушкой событий event ===========
 
 // const list = document.querySelector("#list");
 
@@ -210,7 +210,7 @@ function formHandler(event) {
   todoInput.focus();
 }
 
-// ===========setInterval===========
+// =========== setInterval ===========
 
 const timerIntervalID = setInterval(function () {
   // console.log("Fired!");
@@ -218,7 +218,7 @@ const timerIntervalID = setInterval(function () {
 
 // clearInterval(timerIntervalID)
 
-// =========setTimeOut===========
+// ========= setTimeOut ===========
 
 const timeOut = setTimeout(function () {
   // console.log("TimeOut Fired!");
@@ -234,7 +234,7 @@ setTimeout(() => {
   clearInterval(fired);
 }, 10000);
 
-// ==========Timer=============
+// ========== Timer =============
 const counterElement = document.querySelector("#counter");
 let counter = 0;
 let timerID;
@@ -265,7 +265,7 @@ btnStart.onclick = function () {
   };
 };
 
-// ==============Callback===============
+// ============== Callback ===============
 
 // console.log("Start");
 
@@ -309,34 +309,62 @@ btnStart.onclick = function () {
 // 	}, 1500);
 // }, 2000);
 
-// ============Promise============
+// ============ Promise ============
 
-const myPromise = new Promise(function (resolve, reject) {
-  console.log("Promise created");
-  setTimeout(() => {
-    // server request
-    const response = true;
-    if (response) {
-      let message = "Success";
-      resolve(message);
-    } else {
-      let message = "Failed";
-      reject(message);
-    }
-  }, 1000);
-});
+// const myPromise = new Promise(function (resolve, reject) {
+//   console.log("Promise created");
+//   setTimeout(() => {
+//     // server request
+//     const response = true;
+//     if (response) {
+//       let message = "Success";
+//       resolve(message);
+//     } else {
+//       let message = "Failed";
+//       reject(message);
+//     }
+//   }, 1000);
+// });
 
-myPromise
-  .then(function (data) {
-    console.log("Then 1");
-    console.log(data);
-    return "Data from then 1";
-  })
-  .then(function (data) {
-    console.log("Then 2");
-    console.log(data);
-  })
-  .catch(function (data) {
-    console.log("Catch");
-    console.log(data);
+// myPromise
+//   .then(function (data) {
+//     console.log("Then 1");
+//     console.log(data);
+//     return "Data from then 1";
+//   })
+//   .then(function (data) {
+//     console.log("Then 2");
+//     console.log(data);
+//   })
+//   .catch(function (data) {
+//     console.log("Catch");
+//     console.log(data);
+//   });
+
+// ===== Async function ======
+
+function promiseFunction() {
+  return new Promise(function (resolve, reject) {
+    setTimeout(() => {
+      res = "success11";
+      if (res == "success") {
+        resolve("DONE!");
+      } else {
+        reject("FAIL!");
+      }
+    }, 500);
   });
+}
+
+// console.log(promiseFunction());
+
+async function startPromise() {
+  try {
+    const result = await promiseFunction();
+    console.log(result);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+startPromise();
