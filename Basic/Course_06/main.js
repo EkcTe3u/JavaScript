@@ -264,3 +264,30 @@ btnStart.onclick = function () {
     clearInterval(timerID);
   };
 };
+
+// ==============Callback===============
+
+// console.log("Start");
+
+// setTimeout(() => {
+//   console.log("Print after 2000ms");
+// }, 2000);
+
+// console.log("Finish");
+
+function checkRooms() {
+  setTimeout(() => {
+    console.log("Check rooms in hotel ...");
+    const availableRooms = true;
+    return availableRooms;;
+    }, 1000);
+  
+}
+
+if (checkRooms()) {
+  console.log("Rooms is available");
+  console.log("We go to vacation!!!");
+} else {
+  console.log("No rooms!");
+  console.log("Still home ;(");
+}
