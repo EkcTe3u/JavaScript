@@ -275,19 +275,36 @@ btnStart.onclick = function () {
 
 // console.log("Finish");
 
-function checkRooms() {
-  setTimeout(() => {
-    console.log("Check rooms in hotel ...");
-    const availableRooms = true;
-    return availableRooms;;
-    }, 1000);
-  
-}
+// function checkRooms() {
+//   setTimeout(() => {
+//     console.log("Check rooms in hotel ...");
+//     const availableRooms = true;
+//     return availableRooms;;
+//     }, 1000);
 
-if (checkRooms()) {
-  console.log("Rooms is available");
-  console.log("We go to vacation!!!");
-} else {
-  console.log("No rooms!");
-  console.log("Still home ;(");
-}
+// }
+
+// if (checkRooms()) {
+//   console.log("Rooms is available");
+//   console.log("We go to vacation!!!");
+// } else {
+//   console.log("No rooms!");
+//   console.log("Still home ;(");
+// }
+
+// // callback Hell
+// setTimeout(function () {
+// 	console.log('Print after 2000ms');
+// 	setTimeout(function () {
+// 		console.log('Print after 1500ms');
+// 		setTimeout(function () {
+// 			console.log('Print after 1000ms');
+// 			setTimeout(function () {
+// 				console.log('Print after 500ms');
+// 				setTimeout(function () {
+// 					console.log('Print after 100ms');
+// 				}, 100);
+// 			}, 500);
+// 		}, 1000);
+// 	}, 1500);
+// }, 2000);
