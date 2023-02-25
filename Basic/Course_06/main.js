@@ -308,3 +308,30 @@ btnStart.onclick = function () {
 // 		}, 1000);
 // 	}, 1500);
 // }, 2000);
+
+// ============Promise============
+
+const myPromise = new Promise(function (resolve, reject) {
+  console.log("Promise created");
+  setTimeout(() => {
+    // server request
+    const response = true;
+    if (response) {
+      let message = 'Success'
+      resolve(message);
+    } else {
+      let message = 'Failed'
+      reject(message);
+    }
+  }, 1000);
+});
+
+myPromise
+  .then(function (data) {
+    console.log("Then");
+    console.log(data);
+  })
+  .catch(function (data) {
+    console.log("Catch");
+    console.log(data);
+  });
