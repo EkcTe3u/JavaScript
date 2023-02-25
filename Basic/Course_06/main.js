@@ -317,10 +317,10 @@ const myPromise = new Promise(function (resolve, reject) {
     // server request
     const response = true;
     if (response) {
-      let message = 'Success'
+      let message = "Success";
       resolve(message);
     } else {
-      let message = 'Failed'
+      let message = "Failed";
       reject(message);
     }
   }, 1000);
@@ -328,7 +328,12 @@ const myPromise = new Promise(function (resolve, reject) {
 
 myPromise
   .then(function (data) {
-    console.log("Then");
+    console.log("Then 1");
+    console.log(data);
+    return "Data from then 1";
+  })
+  .then(function (data) {
+    console.log("Then 2");
     console.log(data);
   })
   .catch(function (data) {
