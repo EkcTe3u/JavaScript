@@ -1,0 +1,1 @@
+- [Марафон: 5 дней - 5 проектов на JavaScript](https://lk.result.school/teach/control/stream/view/id/642715970?gcmes=35547601532&gcmlg=9868020)
