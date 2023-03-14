@@ -17,7 +17,7 @@ downBtn.addEventListener('click', () => {
   changeSlide('down');
 });
 
-changeSlide = (direction) => {
+const changeSlide = (direction) => {
   if (direction === 'up') {
     activeSlideIndex++;
     if (activeSlideIndex === slidesCount) {
