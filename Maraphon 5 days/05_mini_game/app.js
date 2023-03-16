@@ -5,7 +5,17 @@ let time = 0;
 let score = 0;
 const timeEl = document.querySelector('#time');
 const board = document.querySelector('#board');
-const color = ['red', 'blue', 'green', 'yellow', 'purple'];
+const color = [
+  '#fff',
+  '#CD5C5C',
+  '#CD5C5C',
+  '#F08080',
+  '#00FF00',
+  '#FFDAB9',
+  '#8A2BE2',
+  '#C0C0C0',
+  '#00FF00',
+];
 
 startBtn.addEventListener('click', (event) => {
   event.preventDefault();
@@ -62,13 +72,13 @@ function createRandomCircle() {
 
   const x = getRandomNumber(0, width - size);
   const y = getRandomNumber(0, height - size);
+
   circle.style.top = `${y}px`;
   circle.style.left = `${x}px`;
-
+  setColor(circle);
   circle.classList.add('circle');
   circle.style.width = `${size}px`;
   circle.style.height = `${size}px`;
-  circle.addEventListener('click', () => setColor(circle));
 
   board.append(circle);
 }
@@ -79,12 +89,13 @@ function getRandomNumber(min, max) {
 
 function setColor(elem) {
   const color = getRandomColor();
-  elem.style.backgroundColor = color;
-  elem.style.color = color;
+  const color2 = getRandomColor();
+  const color3 = getRandomColor();
+  elem.style.background = `linear-gradient(90deg, ${color} 0%, ${color2} 35%, ${color3} 100%)`;
+  return elem;
 }
 
 function getRandomColor() {
   const index = Math.floor(Math.random() * color.length);
-  console.log(color[index]);
   return color[index];
 }
