@@ -55,4 +55,3 @@ console.log(array1.sort((a, b) => Number(BigInt(a) - BigInt(b))));
 console.log();
 
 // https://github.com/tc39/proposal-bigint
- 
