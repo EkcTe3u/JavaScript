@@ -1,0 +1,41 @@
+.container {
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hex-color {
+  text-align: center;
+}
+
+.hex-color h1 {
+  font-size: 28px;
+  text-transform: uppercase;
+  animation: colorchange 5s infinite alternate;
+}
+
+.hex-color h2 {
+  margin-top: 15%;
+}
+
+@keyframes colorchange {
+  0% {
+    color: red;
+  }
+  20% {
+    color: yellow;
+  }
+  40% {
+    color: green;
+  }
+  60% {
+    color: blue;
+  }
+  80% {
+    color: orange;
+  }
+  100% {
+    color: fuchsia;
+  }
+}
