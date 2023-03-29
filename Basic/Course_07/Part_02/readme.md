@@ -1,1 +1,1 @@
-_[Базовый синтаксис JavaScript](https://youtu.be/qa-XleqA0JU)_
+**[Базовый синтаксис JavaScript](https://youtu.be/qa-XleqA0JU)**
