@@ -18,7 +18,7 @@ console.log('Example 2');
 console.log('Example 3');
 
 {
-  for (let i = 0; i < 3;) {
+  for (let i = 0; i < 3; ) {
     console.log(i++);
   }
 }
