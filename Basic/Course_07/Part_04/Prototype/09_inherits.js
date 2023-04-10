@@ -7,7 +7,7 @@ function Rect(x, y, width, height) {
   this.height = height;
 }
 
-Rect.prototype.toString = function() {
+Rect.prototype.toString = function () {
   return `[${this.x}, ${this.y}, ${this.width}, ${this.height}]`;
 };
 
