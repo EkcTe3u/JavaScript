@@ -15,4 +15,13 @@ const letters = ['a', 'c', 'f', 'd', 'y', 'w'];
 const sort = letters.sort();
 console.log(`${sort} отсортированы по алфавиту трансформирует массив`);
 // toSorted - не траснформирует
+// toSpliced - не траснформирует
 console.log(names);
+
+const woman = 'Kristina';
+const index = names.indexOf(woman); // -1 если нет элемента
+console.log(index);
+console.log(names[index]);
+const newNames = names.with(index, 'Kristina!!!');
+console.log(names);
+console.log(newNames);
