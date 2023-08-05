@@ -67,3 +67,16 @@ const finded = people.find((p) => p.budget === 14200);
 console.log(finded);
 const findedIndex = people.findIndex((p) => p.budget === 14200);
 console.log(findedIndex);
+
+const filtered = people.filter(function (p) {
+  return p.budget > 15000;
+});
+console.log(filtered);
+
+let sumBudget = 0;
+
+filtered.forEach(function (p) {
+  sumBudget = sumBudget + p.budget;
+});
+
+console.log(sumBudget)
