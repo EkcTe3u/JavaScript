@@ -25,3 +25,14 @@ console.log(names[index]);
 const newNames = names.with(index, 'Kristina!!!');
 console.log(names);
 console.log(newNames);
+
+const capitalNames = names.map(function (name) {
+  const newName = name + '!';
+  return newName;
+});
+
+console.log(names);
+console.log(capitalNames);
+
+console.log(names.includes('BBB'))
+console.log(names.indexOf('Kristina') !== -1)
