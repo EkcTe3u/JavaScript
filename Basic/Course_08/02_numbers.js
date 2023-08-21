@@ -29,3 +29,18 @@ console.log(BigInt(Number.MAX_SAFE_INTEGER) + 54484488n);
 console.log(parseInt(10n) - 4);
 console.log(10n - BigInt(4));
 console.log(10n / 4n);
+
+// Math
+
+const myNum = 4.9;
+console.log(Math.E);
+console.log(Math.PI);
+console.log(Math.sqrt(25));
+console.log(Math.pow(2, 3));
+console.log(Math.abs(-42));
+console.log(Math.max(-42, 2, 55, 45, 99));
+console.log(Math.floor(myNum)); // в меньшую сторону целое
+console.log(Math.ceil(myNum)); // в большую сторону целоу
+console.log(Math.round(myNum));
+console.log(Math.trunc(myNum)); // только целую часть
+console.log(Math.random()); // от 0 до 1
