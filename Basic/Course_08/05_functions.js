@@ -45,10 +45,23 @@ console.log(sum(40));
 
 function sumAll(...numbers) {
   console.log(numbers);
-  let res = 0
-  for ( let num of numbers){
-  res += num}
+  let res = 0;
+  for (let num of numbers) {
+    res += num;
+  }
   return res;
 }
+
+// Closures
+
+function createPerson(name) {
+  return function (lastName) {
+    console.log(name, '', lastName);
+  };
+}
+
+const addLastName = createPerson('Andrey');
+
+addLastName('Sozdatelev');
 
 console.log(sumAll(1, 2, 3, 4, 5));
