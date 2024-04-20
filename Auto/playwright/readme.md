@@ -16,4 +16,4 @@
     - стронний отчет monocart ```npx monocart show-report test-results/index.html```
 
 
-Дополнительная информацию по [Playwright](https://playwright.dev/)
+Дополнительная информация по [Playwright](https://playwright.dev/)

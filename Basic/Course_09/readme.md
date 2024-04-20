@@ -1,22 +1,2 @@
 _[JavaScript 2024 для начинающих 🧑‍💻](https://www.youtube.com/watch?v=HetL0ETbN6Y)_
 _[JavaScript for beginners code](https://github.com/HowProgrammingWorks/Lowcode)_
-
-# Auto JavaScript Tests
-
-## Подготовка к запуску тестов
-
-- Скачать репориторий локально;
-- Установить последнюю версию фреймворка ```npm install -D @playwright/test@latest```
-- Скачать и бновить браузеры ```npx playwright install --with-deps```
-
-## Запуск тестов
-
-- Запустить тесты командой ```npx playwright test```
-
-## Просмотр результатов
-- Есть два варианта:
-    - встроенный отчет playwright ```playwright npx playwright show-report```
-    - стронний отчет monocart ```npx monocart show-report test-results/index.html```
-
-
-Дополнительная информацию по [Playwright](https://playwright.dev/)
