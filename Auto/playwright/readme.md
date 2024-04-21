@@ -8,11 +8,12 @@
 
 ## Запуск тестов
 
-- Запустить тесты командой ```npx playwright test```
+- Запустить тесты командой 
+    `npx playwright test`
 
 ## Просмотр результатов
 - Есть два варианта:
-    - встроенный отчет playwright ```playwright npx playwright show-report```
+    - встроенный отчет playwright ```npx playwright show-report```
     - стронний отчет monocart ```npx monocart show-report test-results/index.html```
 
 
