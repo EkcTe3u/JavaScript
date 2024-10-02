@@ -1,0 +1,1 @@
+**[JavaScript Tutorial Full Course EN](https://www.youtube.com/watch?v=EerdGm-ehJQ)**
