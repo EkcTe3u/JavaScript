@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <p>Rock Paper Scissors</p>
+    <button
+      onclick="
+      const randomNumberRock = Math.random();
+      console.log(randomNumberRock)
+      let computerMoveRock = '';
+
+      if (randomNumberRock >= 0 && randomNumberRock < 1 / 3) {
+        computerMoveRock = 'rock';
+      } else if (randomNumberRock >= 1 / 3 && randomNumberRock < 2 / 3) {
+        computerMoveRock = 'paper';
+      } else if (randomNumberRock >= 2 / 3 && randomNumberRock < 1) {
+        computerMoveRock = 'scissors';
+      }
+
+      let resultRock = '';
+
+      if (computerMoveRock === 'rock') {
+        resultRock = 'Tie.';
+      } else if (computerMoveRock === 'paper') {
+        resultRock = 'You lose.';
+      } else if (computerMoveRock === 'scissors') {
+        resultRock = 'You win.';
+      }
+
+      alert(`You picked rock. Computer picked ${computerMoveRock}. ${resultRock}`);
+    "
+    >
+      Rock
+    </button>
+
+    <button
+      onclick="
+      let randomNumberPaper = Math.random();
+      console.log(randomNumberPaper)
+      let computerMovePaper = '';
+
+      if (randomNumberPaper >= 0 && randomNumberPaper < 1 / 3) {
+        computerMove = 'rock';
+      } else if (randomNumberPaper >= 1 / 3 && randomNumberPaper < 2 / 3) {
+        computerMovePaper = 'paper';
+      } else if (randomNumberPaper >= 2 / 3 && randomNumberPaper < 1) {
+        computerMovePaper = 'scissors';
+      }
+
+      let resultPaper = '';
+
+      if (computerMovePaper === 'rock') {
+        resultPaper = 'You win.';
+      } else if (computerMovePaper === 'paper') {
+        resultPaper = 'Tie.';
+      } else if (computerMovePaper === 'scissors') {
+        resultPaper = 'You lose.';
+      }
+
+      alert(`You picked paper. Computer picked ${computerMovePaper}. ${resultPaper}`);
+    "
+    >
+      Paper
+    </button>
+
+    <button
+      onclick="
+      const randomNumberScissors = Math.random();
+      console.log(randomNumberScissors)
+      let computerMoveScissors = '';
+
+      if (randomNumberScissors >= 0 && randomNumberScissors < 1 / 3) {
+        computerMove = 'rock';
+      } else if (randomNumberScissors >= 1 / 3 && randomNumberScissors < 2 / 3) {
+        computerMove = 'paper';
+      } else if (randomNumberScissors >= 2 / 3 && randomNumberScissors < 1) {
+        computerMove = 'scissors';
+      }
+
+      let resultScissors = '';
+
+      if (computerMoveScissors === 'rock') {
+        resultcissors = 'You lose.';
+      } else if (computerMoveScissors === 'paper') {
+        resultcissors = 'You win.';
+      } else if (computerMoveScissors === 'scissors') {
+        resultcissors = 'Tie.';
+      }
+
+      alert(`You picked scissors. Computer picked ${computerMoveScissors}. ${resultScissors}`);
+    "
+    >
+      Scissors
+    </button>
+
+    <script></script>
+  </body>
+</html>

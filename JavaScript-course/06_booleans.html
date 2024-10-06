@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booleans</title>
+  </head>
+  <body>
+    <script>
+      console.log(typeof 'true');
+      console.log(typeof false);
+      console.log(3 > 2);
+      console.log(5 == '5.00'); //true
+      console.log(5 === '5.00');
+
+      if (true) {
+        console.log('hello');
+      } else {
+        console.log('goodbye');
+      }
+
+      const age = 15;
+      if (age > 16) {
+        console.log('You can drive');
+      } else if (age > 14) {
+        console.log('You can vote');
+      } else {
+        console.log('You can not drive');
+      }
+
+      console.log(true ? 'truthy' : 'falsy');
+
+      console.log(false ? 'truthy' : 'falsy');
+
+      console.log('------');
+
+      const result = 0 ? 'truthy' : 'falsy';
+      console.log(result);
+
+      false && console.log('hello');
+
+      const message = 5 && 'hello';
+      console.log(message);
+
+      const currency = undefined || 'USD';
+      console.log(currency);
+    </script>
+  </body>
+</html>
