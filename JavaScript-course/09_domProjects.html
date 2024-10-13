@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Projects</title>
+  </head>
+  <body>
+    <p>Youtube subscribe button</p>
+    <button
+      onclick="
+        subdcribe();
+      "
+      class="js-subscribe-button"
+    >
+      Subscribe
+    </button>
+
+    <p>Shipping Calcuator</p>
+    <input
+      placeholder="cost of order"
+      class="js-input"
+      onkeydown="
+      handleCostKeyDown(event);  
+    "
+    />
+    <button
+      onclick="
+      calculateTotalPrice();
+    "
+    >
+      Calculate
+    </button>
+    <p class="js-total"></p>
+
+    <script>
+      function handleCostKeyDown(event) {
+        if (event.key === 'Enter') {
+          calculateTotalPrice();
+        }
+      }
+
+      function calculateTotalPrice() {
+        const inputElement = document.querySelector('.js-input').value;
+        let shippingCost = 10;
+        if (inputElement < 40) {
+          if (inputElement > 0) {
+            var total = Number(inputElement) + shippingCost;
+            document.querySelector(
+              '.js-total'
+            ).innerHTML = `Total price with delivery is $${total}`;
+          } else {
+            document.querySelector('.js-total').innerHTML =
+              'Please, add cost of order';
+          }
+        } else {
+          var total = inputElement;
+          document.querySelector(
+            '.js-total'
+          ).innerHTML = `Total price with delivery is $${total}`;
+        }
+      }
+
+      function subdcribe() {
+        const buttonElement = document.querySelector('.js-subscribe-button');
+
+        if (buttonElement.innerText === 'Subscribe') {
+          buttonElement.innerHTML = 'Subscribed';
+        } else {
+          buttonElement.innerHTML = 'Subscribe';
+        }
+      }
+    </script>
+  </body>
+</html>
