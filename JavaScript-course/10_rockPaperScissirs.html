@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rock Paper Scissors</title>
+    <style>
+      body {
+        background-color: rgb(24, 24, 24);
+        color: white;
+        font-family: Arial;
+        /* margin-left: 700px; */
+      }
+      .title {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .move-icon {
+        height: 50px;
+      }
+      .move-button {
+        background-color: transparent;
+        border: 3px solid white;
+        margin: 5px;
+        height: 120px;
+        width: 120px;
+        border-radius: 60px;
+        cursor: pointer;
+      }
+      .result {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 50px;
+      }
+      .score {
+        margin-top: 50px;
+      }
+      .reset-button {
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        /* font-weight: bold; */
+        padding: 8px 15px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="title">Rock Paper Scissors</p>
+    <button
+      class="move-button"
+      onclick="
+      playGame('rock')
+    "
+    >
+      <img src="img/rock-emoji.png" class="move-icon" />
+    </button>
+
+    <button
+      class="move-button"
+      onclick="
+     playGame('paper')
+    "
+    >
+      <img src="img/paper-emoji.png" class="move-icon" />
+    </button>
+
+    <button
+      class="move-button"
+      onclick="
+    playGame('scissors')
+    "
+    >
+      <img src="img/scissors-emoji.png" class="move-icon" />
+    </button>
+    <p class="js-result result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score score"></p>
+    <button
+      class="reset-button"
+      onclick="
+        score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
+        localStorage.removeItem('score');
+        updateScoreElement();
+        clearResultMove();
+    "
+    >
+      Reset score
+    </button>
+
+    <script src="scripts/10_rockPaperScossors.js"></script>
+  </body>
+</html>
