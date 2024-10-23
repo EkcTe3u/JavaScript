@@ -39,8 +39,27 @@ button {
   cursor: pointer;
 }
 
+.violet-button {
+  background-color: #5243f4;
+  color: white;
+}
+
 button:hover {
   background-color: #eeeeee;
+}
+button.violet-button:hover {
+  background-color: #3b2cd8;
+}
+
+.common-title {
+  font-family: 'Steppe-ExtraBold', sans-serif;
+  font-size: 60px;
+  line-height: 100%;
+  text-align: center;
+}
+.main {
+  position: relative;
+  overflow: hidden;
 }
 
 .header {
@@ -106,4 +125,208 @@ button:hover {
   top: 0;
   right: 0;
   z-index: -1;
+}
+
+.products {
+  padding: 100px 0;
+  position: relative;
+}
+
+.products-items {
+  display: grid;
+  grid-template-columns: repeat(3, 384px);
+  gap: 90px 24px;
+  margin-top: 110px;
+}
+
+.product-item {
+  background-color: white;
+  color: #5d3427;
+}
+
+.products-item-image {
+  height: 202px;
+  text-align: center;
+}
+
+.products-item-image img {
+  height: 272px;
+  top: -70px;
+  position: relative;
+  max-width: 100%;
+}
+
+.products-item-details {
+  padding: 24px;
+}
+
+.products-item-title {
+  font-family: 'Steppe-ExtraBold', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.products-item-text {
+  height: 110px;
+  font-size: 14px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.products-item-extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products-item-price {
+  font-family: 'Steppe-ExtraBold', sans-serif;
+  font-size: 24px;
+  color: #5243f4;
+  margin-bottom: 10px;
+}
+
+.products-item-weight {
+  font-size: 12px;
+}
+
+.love {
+  padding: 64px 0 150px 0;
+}
+
+.love-items {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.love-item {
+  width: 590px;
+  height: 493px;
+}
+
+.love-item-white {
+  background-color: white;
+  padding: 110px 80px;
+  box-sizing: border-box;
+  color: #5d3427;
+}
+
+.love-item-title {
+  font-family: 'Steppe-ExtraBold', sans-serif;
+  font-size: 24px;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+
+.love-item-text {
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.order {
+  padding-bottom: 102px;
+  position: relative;
+}
+
+.order .container {
+  position: relative;
+}
+
+.order-block {
+  margin-top: 103px;
+  background-color: rgb(255 255 255 /30%);
+  backdrop-filter: blur(50%);
+  display: flex;
+}
+
+.order-form {
+  margin-left: 200px;
+  max-width: 387px;
+  padding: 40px 0 44px 0;
+  box-sizing: border-box;
+}
+
+.order-form-text {
+  font-family: 'Steppe-ExtraBold', sans-serif;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.order-form-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.order-form-inputs input {
+  border: 1px solid white;
+  border-radius: 60px;
+  margin-bottom: 16px;
+  padding: 24px 22px;
+  font-size: 18px;
+  width: 385px;
+  height: 68px;
+  background: transparent;
+  box-sizing: border-box;
+  outline: none;
+  color: white;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.order-form-inputs .button.violet-button {
+  width: 387px;
+  height: 71px;
+}
+
+.order-block-image {
+  height: 501px;
+  margin-left: 109px;
+}
+
+.order-image {
+  height: 559px;
+  top: -58px;
+  position: relative;
+}
+
+.order-bg-image {
+  position: absolute;
+  top: 0;
+  right: calc(100% - 810px);
+  z-index: -1;
+}
+
+.footer {
+  padding: 126px 0 50px 0;
+  text-align: center;
+}
+
+.rights {
+  margin-top: 14px;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.line1 {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: calc(100% - 960px);
+}
+
+.line2 {
+  position: absolute;
+  z-index: -1;
+  top: -40px;
+  left: 0;
+}
+
+.line3 {
+  position: absolute;
+  z-index: -1;
+  top: -920px;
+  left: 0;
 }
