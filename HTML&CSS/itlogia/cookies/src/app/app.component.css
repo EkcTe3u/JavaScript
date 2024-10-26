@@ -308,3 +308,50 @@
 .order-form-inputs input.error {
   border-color: red;
 }
+
+.sugar-free {
+  margin: 20px 0;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sugar-free > div {
+  font-size: 18px;
+}
+
+.sugar-free input[type="checkbox"] {
+  display: none;
+}
+
+.sugar-free label {
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+  position: relative;
+  border: 2px solid white;
+}
+
+.sugar-free label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 45px;
+  transition: 0.3s;
+}
+
+.sugar-free input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.sugar-free label:active:after {
+  width: 50px;
+}
