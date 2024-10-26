@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "cookies:build:production"
+              "buildTarget": "cookies:build:production"
             },
             "development": {
-              "browserTarget": "cookies:build:development"
+              "buildTarget": "cookies:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cookies:build"
+            "buildTarget": "cookies:build"
           }
         },
         "test": {
