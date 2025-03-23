@@ -5,8 +5,8 @@ const values = {
   price: 25, // number
   stock: false, //true, false - boolean
   avg: (a, b) => (a + b) / 2n, // bigInt
-  reference: null,
-  primitive: undefined,
+  reference: null, // for type object
+  primitive: undefined, // for unknown  string, number, bigInt, boolean
   numbers: [NaN, Infinity],
 };
 
