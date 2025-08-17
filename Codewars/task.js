@@ -118,4 +118,22 @@ function maskify(cc) {
   }
 }
 
-console.log(maskify(12345));
+// It's the academic year's end, fateful moment of your school report. The averages must be calculated.
+// All the students come to you and entreat you to calculate their average for them. Easy ! You just need to write a script.
+// Return the average of the given array rounded down to its nearest integer.
+// The array will never be empty.
+
+function getAverage(marks) {
+  return Math.floor(
+    marks.reduce((accumulator, currentValue) => accumulator + currentValue, 0) /
+      marks.length
+  );
+}
+// Implement a function that computes the difference between two lists. The function should remove all occurrences of elements
+//  from the first list (a) that are present in the second list (b).
+//  The order of elements in the first list should be preserved in the result.
+function arrayDiff(a, b) {
+  if (a.length === 0) return a;
+  let uniqueB = [...new Set(b)];
+  return a.filter((elem) => !uniqueB.includes(elem));
+}
